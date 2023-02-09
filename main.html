@@ -8,42 +8,50 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<header role="heading">
-  <h1>My Portfolio</h1>
-</header>
-
-<nav role="navigation">
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<main>
-  <section id="about" role="region">
-    <img src="profile-pic.jpg" alt="Profile picture" role="img">
-    <h1 role="heading">Role</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor, magna id egestas rhoncus, velit velit dictum ligula, sit amet iaculis libero libero eu lectus.</p>
-  </section>
-
-  <section id="projects" role="region">
-    <h2>My Projects</h2>
-    <ul role="list">
-      <li role="listitem">Project 1</li>
-      <li role="listitem">Project 2</li>
-      <li role="listitem">Project 3</li>
-      <li role="listitem">Project 4</li>
-    </ul>
-  </section>
-
-  <section id="contact" role="region">
-    <h2>Contact Me</h2>
-    <form>
-      <!-- Form fields here -->
-    </form>
-  </section>
-</main>
+	<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav aria-role="navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h1 aria-role="heading">About Me</h1>
+        <img aria-role="img" src="about-me.jpg" alt="A picture of me">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquet velit vel velit bibendum luctus. Morbi sollicitudin elit ut risus facilisis, a congue elit fringilla.</p>
+      </section>
+      <section id="projects">
+        <h1 aria-role="heading">Projects</h1>
+        <ul aria-role="list">
+          <li aria-role="listitem">Project 1</li>
+          <li aria-role="listitem">Project 2</li>
+          <li aria-role="listitem">Project 3</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h1 aria-role="heading">Contact</h1>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
 
     <script type="text/javascript" src="./script.js">
 </script>
